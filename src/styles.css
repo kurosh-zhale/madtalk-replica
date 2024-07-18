@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+/* imports
+@import "~ng-zorro-antd/ng-zorro-antd.min.css";
+@import "~ng-zorro-antd/style/index.min.css";
+@import "~ng-zorro-antd/button/style/index.min.css"; */
+
+/* variables */
+:root {
+    --green: #007a45;
+    --light-green: #3ed091;
+    --red: #bc4749;
+    --light-red: #d46e6f;
+    --red_white: #fff3f3;
+    --gold_white: #fff6ed;
+    --white: #ffffff;
+    --black: #000000;
+    --light-blue: #d8ebfb;
+    --light-gray: #f5f5f5;
+    --dark-gray: #686969;
+    --prussian-blue: #003151;
+    --disabled: #f5f5f5;
+    --error-bg: #f3cbcc;
+    --gray: #c2bdbd;
+    --light_gray: #ebebeb;
+    --dark_gray: #686969;
+    --gray-1: #fafafb;
+    --printable-dark-gray: #888888;
+    --printable-gray: #d5d5d5;
+    --printable-border-color: #000000;
+    --radius: 7px;
+    --filter-width: 220px;
+    --gold: #fd9a35;
+    --gold-hover: #fdae5d;
+  }

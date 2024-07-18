@@ -1,0 +1,75 @@
+div#heading {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+button#add-new-class {
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: var(--radius);
+  height: 32px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.03rem;
+  transition: opacity 250ms linear;
+  border-color: var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button#add-new-class:hover {
+  opacity: 50%;
+}
+
+div#filters-container {
+  display: flex;
+  width: 100vw;
+  height: 70px;
+  justify-content: start;
+  align-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+div#filters-container > span {
+  display: flex;
+}
+
+span#layout-btn-container {
+  display: flex;
+  gap: 0px;
+}
+
+button.layout-btn {
+  height: 22px;
+  width: min-content;
+  background-color: var(--white);
+  border: 0.5px solid var(--light-gray);
+  border-radius: 0px;
+  transition: color 200ms ease-out;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+button.layout-btn:hover {
+  color: var(--green);
+}
+
+button.layout-btn.selected {
+  color: var(--white);
+  background-color: var(--green);
+  border-color: transparent;
+}
+
+nz-cascader,
+nz-select {
+  height: 32px;
+}
