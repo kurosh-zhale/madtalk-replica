@@ -9,5 +9,5 @@ import { ClassesService } from '../../services/classes.service';
   styleUrl: './table.component.css',
 })
 export class TableComponent {
-  constructor(private service: ClassesService) {}
+  constructor() {}
 }

@@ -9,5 +9,5 @@ import { ClassesService } from '../../services/classes.service';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-  constructor(private service:ClassesService) {}
+  constructor() {}
 }
