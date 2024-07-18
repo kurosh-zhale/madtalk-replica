@@ -1,1 +1,41 @@
-<p>table works!</p>
+<nz-table #table [nzData]="data_list()" nzTableLayout="fixed">
+    <thead>
+      <tr>
+        <th>نام</th>
+        <th>گروه آموزشی</th>
+        <th>درس</th>
+        <th>مدت زمان</th>
+        <th>وضعیت</th>
+        <th>امکانات</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (data of table.data; track $index) {
+      <tr>
+        <td>
+          {{ data.name }}
+        </td>
+        <td></td>
+        <td>{{ data.school_book_str }}</td>
+        <td>{{ data.duration }}</td>
+        <td>@if (data.is_running) {شروع شده}@else {شروع نشده}</td>
+        <td id="table-btns">
+          <button nz-button nzType="primary" id="enter-class">ورود به درس</button>
+          <button nz-button nzType="default" id="enter-class">ضبت شده ها</button>
+          <button nz-button nz-dropdown [nzDropdownMenu]="more">
+            بیشتر <span nz-icon nzType="down"></span>
+          </button>
+          <nz-dropdown-menu #more="nzDropdownMenu">
+            <ul nz-menu>
+              <li nz-menu-item>گزارش</li>
+              <li nz-menu-item>فایل های پیوست</li>
+              <li nz-menu-item>ویرایش</li>
+              <li nz-menu-item>حذف</li>
+            </ul>
+          </nz-dropdown-menu>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </nz-table>
+  

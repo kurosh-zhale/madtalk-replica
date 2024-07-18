@@ -64,6 +64,6 @@
   @if (layout()==='card') {
   <app-card></app-card>
   } @else if (layout()==='table') {
-  <app-table></app-table>
+  <app-table [data_list]="classes_list()"></app-table>
   }
 </main>
